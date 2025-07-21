@@ -4,6 +4,6 @@ namespace Cdb.Domain.Interfaces
 {
     public interface ICdbCalculatorService
     {
-        CdbYeldDTO Yeld(decimal value, int months);
+        CdbYeldDTO Yield(decimal value, int months);
     }
 }

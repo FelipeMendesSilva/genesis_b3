@@ -17,12 +17,10 @@
             StatusCode = statusCode;
             ErrorMessage = errorMessage;
         }
-
-        // Resultado de sucesso
+        
         public static Result Success(object value, int statusCode = 200)
             => new Result(statusCode, value);
 
-        // Resultado de falha
         public static Result Failure(string errorMessage, int statusCode = 400)
             => new Result(statusCode, errorMessage);
     }

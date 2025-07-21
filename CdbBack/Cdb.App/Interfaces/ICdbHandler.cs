@@ -5,6 +5,6 @@ namespace Cdb.App.Interfaces
 {
     public interface ICdbHandler
     {
-        Result Handler(CdbRequest cdbRequest);
+        Result YieldHandler(CdbRequest cdbRequest);
     }
 }

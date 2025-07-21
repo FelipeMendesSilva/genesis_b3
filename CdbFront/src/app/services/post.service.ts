@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class PostService {
-  private cdbUrl = `${CDB_API}/api/cdb`;
+  private cdbUrl = `${CDB_API}/api/cdb/yield`;
 
   constructor(private http: HttpClient) {}
 

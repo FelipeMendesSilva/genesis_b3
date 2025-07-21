@@ -7,7 +7,7 @@ namespace Cdb.Domain.Services
 {
     public class CdbCalculatorService : ICdbCalculatorService
     {
-        public CdbYeldDTO Yeld(decimal value, int months)
+        public CdbYeldDTO Yield(decimal value, int months)
         {
             decimal cdi = 0.009m;
             decimal tb = 1.08m;

@@ -14,7 +14,7 @@ namespace Cdb.App.Handler
         {
             _cdbCalculatorService = cdbCalculatorService;
         }
-        public Result Handler(CdbRequest cdbRequest)
+        public Result YieldHandler(CdbRequest cdbRequest)
         {
             var validator = new CdbRequestValidator();
             var resultado = validator.Validate(cdbRequest);
@@ -28,7 +28,7 @@ namespace Cdb.App.Handler
                 return Result.Failure(errors);
             }
 
-            var cdbYeldDTO = _cdbCalculatorService.Yeld(cdbRequest.Value, cdbRequest.Months);
+            var cdbYeldDTO = _cdbCalculatorService.Yield(cdbRequest.Value, cdbRequest.Months);
             var cdbResponse = new CdbResponse() { GrossAmount = cdbYeldDTO.GrossAmount, NetAmount = cdbYeldDTO.NetAmount };
             return Result.Success(cdbResponse);
         }
