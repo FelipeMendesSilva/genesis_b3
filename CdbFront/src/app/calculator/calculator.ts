@@ -9,8 +9,10 @@ import { CdbResponse, PostService } from '../services/post.service';
 })
 @Injectable()
 export class Calculator {
-  cdbValue: number = 0;
-  cdbMonths: number = 0;
+  cdbValue: number = 100.00;
+  cdbMonths: number = 1;
+  errorCdbValueCss: boolean = false;
+  errorCdbMonthsCss: boolean = false;
   posts: CdbResponse | null = null;
 
   constructor(private postService: PostService) { }
@@ -19,7 +21,9 @@ export class Calculator {
     this.postService.cdbPost(this.cdbValue, this.cdbMonths)
       .subscribe(
         {
-          next: (res: CdbResponse) => { this.posts = res; },
+          next: (res: CdbResponse) => {
+            this.posts = res;
+          },
           error: (err) => {
             console.error('Erro na requisição:', err);
             this.posts = null; // limpa resultado anterior, se quiser
@@ -28,11 +32,35 @@ export class Calculator {
         });
   }
 
-  zerarResultado() {
+  cleanResult() {
     this.posts = null;
   }
 
-  valido(): boolean {
-    return this.cdbValue > 0 && this.cdbMonths > 0;
+
+  onlyPositive(event: KeyboardEvent, isInt: boolean): void {
+    if (event.key === '-'
+      || event.key === 'Minus'
+      || (isInt && event.key === '.')
+      || (isInt && event.key === ',')) {
+      event.preventDefault();
+    }
+    this.cleanResult();
+  }
+
+  valid(): boolean {
+    var isValid = true;
+    if(this.cdbValue >= 0.01 && this.cdbValue.toString().match(/^\d*((\.|\,)\d{0,2})?$/))
+      this.errorCdbValueCss = false;
+    else{
+      this.errorCdbValueCss = true;
+      isValid = false;}
+
+    if(this.cdbMonths >= 1 && Number.isInteger(this.cdbMonths))
+      this.errorCdbMonthsCss = false;
+    else{
+      this.errorCdbMonthsCss = true;
+      isValid = false;}
+
+    return isValid;
   }
 }

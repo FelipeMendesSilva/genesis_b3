@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Genesis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\controllers\\cdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\controllers\\cdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B12262E8-C232-455E-83CB-618CD69ED8E3}|CdbBack\\Cdb.Tests\\Cdb.Tests\\Cdb.Tests.csproj|d:\\genesis\\cdbback\\cdb.tests\\cdb.tests\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -159,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CdbController.cs",
               "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\Controllers\\CdbController.cs",
               "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\Controllers\\CdbController.cs",
-              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\Controllers\\CdbController.cs",
-              "RelativeToolTip": "CdbBack\\Cdb.API\\Controllers\\CdbController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\Controllers\\CdbController.cs*",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\Controllers\\CdbController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T23:57:32.591Z",
               "EditorCaption": ""
@@ -196,13 +196,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\packages.config",
               "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\packages.config",
               "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\packages.config",
               "RelativeToolTip": "CdbBack\\Cdb.API\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-07-20T00:55:41.726Z",
               "EditorCaption": ""

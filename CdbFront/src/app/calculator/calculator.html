@@ -1,17 +1,28 @@
-<h2>Cálculo do CDB</h2>
+<div class = "container">
+<h2>Calculadora CDB</h2>
 
-<label>Digite o Valor:</label>
-<br />
-<input type="number" [(ngModel)]="cdbValue" (ngModelChange)="zerarResultado()" [min]="1" required />
+<label>Digite o valor do investimento:</label>
+<input type="number" 
+    [class.erro-input]="errorCdbValueCss"
+    [(ngModel)]="cdbValue" 
+    (ngModelChange)="valid()"
+    step="0.01" min="0.01" required  
+    (keydown)="onlyPositive($event, false)" />
 <br /><br />
 
 <label>Digite o período em meses:</label>
-<br />
-<input type="number" [(ngModel)]="cdbMonths" (ngModelChange)="zerarResultado()" [min]="1" required />
+<input type="number" 
+    [class.erro-input]="errorCdbMonthsCss"
+    [(ngModel)]="cdbMonths" 
+    (ngModelChange)="valid()"
+    step="1" min="1" required 
+    (keydown)="onlyPositive($event, true)"  />
 <br /><br />
 
-<button (click)="calculate()" [disabled]="!valido()">Calcular</button>
+<button (click)="calculate()" [disabled]="!valid()">Calcular</button>
 <br /><br />
 
-<p>Rendimento Bruto: R$ {{ posts?.GrossAmount }}<br />
-    Rendimento Líquido: R$ {{ posts?.NetAmount }}</p>
+<p *ngIf="posts">Rendimento Bruto: R$ {{ posts.GrossAmount }}<br />
+    Rendimento Líquido: R$ {{ posts.NetAmount }}</p>
+  
+</div>
