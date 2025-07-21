@@ -1,0 +1,2 @@
+D:\Genesis\CdbBack\CdbApp\obj\Debug\CdbApp.csproj.AssemblyReference.cache
+D:\Genesis\CdbBack\CdbApp\obj\Debug\CdbApp.csproj.CoreCompileInputs.cache

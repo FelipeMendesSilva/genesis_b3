@@ -1,0 +1,483 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Genesis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\controllers\\cdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\controllers\\cdbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B12262E8-C232-455E-83CB-618CD69ED8E3}|CdbBack\\Cdb.Tests\\Cdb.Tests\\Cdb.Tests.csproj|d:\\genesis\\cdbback\\cdb.tests\\cdb.tests\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B12262E8-C232-455E-83CB-618CD69ED8E3}|CdbBack\\Cdb.Tests\\Cdb.Tests\\Cdb.Tests.csproj|solutionrelative:cdbback\\cdb.tests\\cdb.tests\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B12262E8-C232-455E-83CB-618CD69ED8E3}|CdbBack\\Cdb.Tests\\Cdb.Tests\\Cdb.Tests.csproj|D:\\Genesis\\cdbback\\cdb.tests\\cdb.tests\\api\\controllers\\cdbcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B12262E8-C232-455E-83CB-618CD69ED8E3}|CdbBack\\Cdb.Tests\\Cdb.Tests\\Cdb.Tests.csproj|solutionrelative:cdbback\\cdb.tests\\cdb.tests\\api\\controllers\\cdbcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|D:\\Genesis\\cdbback\\cdb.domain\\interfaces\\icdbcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|solutionrelative:cdbback\\cdb.domain\\interfaces\\icdbcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|D:\\Genesis\\cdbback\\cdb.domain\\helper\\cdbtaxhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|solutionrelative:cdbback\\cdb.domain\\helper\\cdbtaxhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|D:\\Genesis\\cdbback\\cdb.domain\\dto\\cdbyelddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|solutionrelative:cdbback\\cdb.domain\\dto\\cdbyelddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|D:\\Genesis\\cdbback\\cdb.domain\\services\\cdbcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|solutionrelative:cdbback\\cdb.domain\\services\\cdbcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|D:\\Genesis\\cdbback\\cdb.app\\handlers\\cdbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|solutionrelative:cdbback\\cdb.app\\handlers\\cdbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|D:\\Genesis\\cdbback\\cdb.app\\validators\\cdbrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|solutionrelative:cdbback\\cdb.app\\validators\\cdbrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\filters\\globalerrorfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\filters\\globalerrorfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|D:\\Genesis\\cdbback\\cdb.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429148C3-4D17-41AB-A96B-AA5EF3DA3C06}|CdbBack\\Cdb.API\\Cdb.API.csproj|solutionrelative:cdbback\\cdb.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|D:\\Genesis\\cdbback\\cdb.app\\responses\\cdbresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|solutionrelative:cdbback\\cdb.app\\responses\\cdbresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|D:\\Genesis\\cdbback\\cdb.app\\interfaces\\icdbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|solutionrelative:cdbback\\cdb.app\\interfaces\\icdbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|D:\\Genesis\\cdbback\\cdb.domain\\result\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{065B09B2-9C85-453C-867B-909EA7528E04}|CdbBack\\Cdb.Domain\\Cdb.Domain.csproj|solutionrelative:cdbback\\cdb.domain\\result\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|D:\\Genesis\\cdbback\\cdb.app\\requests\\cdbrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB28BBF-B825-474C-ACA7-9CED9BAF421D}|CdbBack\\Cdb.App\\Cdb.App.csproj|solutionrelative:cdbback\\cdb.app\\requests\\cdbrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbApp\\Handlers\\CdbHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbApp\\Handlers\\CdbHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbApp\\Responses\\CdbResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbApp\\Responses\\CdbResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbApp\\Requests\\CdbRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbApp\\Requests\\CdbRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbApp\\Interfaces\\ICdbHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbApp\\Interfaces\\ICdbHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\Global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\Global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\Filters\\ErrorFilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\Filters\\ErrorFilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\ValuesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\Controllers\\ValuesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\CdbController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\Controllers\\CdbController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\App_Start\\WebApiConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\App_Start\\WebApiConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CdbBack\\CdbAPI\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Tests\\Cdb.Tests\\packages.config",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Tests\\Cdb.Tests\\packages.config",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Tests\\Cdb.Tests\\packages.config",
+              "RelativeToolTip": "CdbBack\\Cdb.Tests\\Cdb.Tests\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-20T19:12:59.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CdbControllerTest.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Tests\\Cdb.Tests\\API\\Controllers\\CdbControllerTest.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Tests\\Cdb.Tests\\API\\Controllers\\CdbControllerTest.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Tests\\Cdb.Tests\\API\\Controllers\\CdbControllerTest.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.Tests\\Cdb.Tests\\API\\Controllers\\CdbControllerTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T18:59:05.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CdbController.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\Controllers\\CdbController.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\Controllers\\CdbController.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\Controllers\\CdbController.cs*",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\Controllers\\CdbController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:57:32.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:57:28.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CdbRequestValidator.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.App\\Validators\\CdbRequestValidator.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.App\\Validators\\CdbRequestValidator.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.App\\Validators\\CdbRequestValidator.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.App\\Validators\\CdbRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T00:41:25.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\packages.config",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\packages.config",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\packages.config",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-20T00:55:41.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CdbYeldDTO.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Domain\\DTO\\CdbYeldDTO.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Domain\\DTO\\CdbYeldDTO.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Domain\\DTO\\CdbYeldDTO.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.Domain\\DTO\\CdbYeldDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T14:46:55.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CdbTaxHelper.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Helper\\CdbTaxHelper.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Domain\\Helper\\CdbTaxHelper.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Helper\\CdbTaxHelper.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.Domain\\Helper\\CdbTaxHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:05:53.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICdbCalculatorService.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Interfaces\\ICdbCalculatorService.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Domain\\Interfaces\\ICdbCalculatorService.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Interfaces\\ICdbCalculatorService.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.Domain\\Interfaces\\ICdbCalculatorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T00:34:48.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\Web.config",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\Web.config",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\Web.config",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-20T12:01:39.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\Global.asax.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\Global.asax.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\Global.asax.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\Global.asax.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:58:23.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CdbHandler.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.App\\Handlers\\CdbHandler.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.App\\Handlers\\CdbHandler.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.App\\Handlers\\CdbHandler.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.App\\Handlers\\CdbHandler.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:58:51.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CdbCalculatorService.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Services\\CdbCalculatorService.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Domain\\Services\\CdbCalculatorService.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Services\\CdbCalculatorService.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.Domain\\Services\\CdbCalculatorService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T00:34:21.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GlobalErrorFilter.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.API\\Filters\\GlobalErrorFilter.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.API\\Filters\\GlobalErrorFilter.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.API\\Filters\\GlobalErrorFilter.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.API\\Filters\\GlobalErrorFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:58:10.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICdbHandler.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.App\\Interfaces\\ICdbHandler.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.App\\Interfaces\\ICdbHandler.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.App\\Interfaces\\ICdbHandler.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.App\\Interfaces\\ICdbHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:57:03.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CdbResponse.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.App\\Responses\\CdbResponse.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.App\\Responses\\CdbResponse.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.App\\Responses\\CdbResponse.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.App\\Responses\\CdbResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T18:23:47.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Result.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Result\\Result.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.Domain\\Result\\Result.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.Domain\\Result\\Result.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.Domain\\Result\\Result.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:59:41.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CdbRequest.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\Cdb.App\\Requests\\CdbRequest.cs",
+              "RelativeDocumentMoniker": "CdbBack\\Cdb.App\\Requests\\CdbRequest.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\Cdb.App\\Requests\\CdbRequest.cs",
+              "RelativeToolTip": "CdbBack\\Cdb.App\\Requests\\CdbRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T23:59:04.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CdbResponse.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbApp\\Responses\\CdbResponse.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbApp\\Responses\\CdbResponse.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbApp\\Responses\\CdbResponse.cs",
+              "RelativeToolTip": "CdbBack\\CdbApp\\Responses\\CdbResponse.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T21:54:57.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CdbRequest.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbApp\\Requests\\CdbRequest.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbApp\\Requests\\CdbRequest.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbApp\\Requests\\CdbRequest.cs",
+              "RelativeToolTip": "CdbBack\\CdbApp\\Requests\\CdbRequest.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T21:51:13.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CdbHandler.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbApp\\Handlers\\CdbHandler.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbApp\\Handlers\\CdbHandler.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbApp\\Handlers\\CdbHandler.cs",
+              "RelativeToolTip": "CdbBack\\CdbApp\\Handlers\\CdbHandler.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T21:35:49.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICdbHandler.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbApp\\Interfaces\\ICdbHandler.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbApp\\Interfaces\\ICdbHandler.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbApp\\Interfaces\\ICdbHandler.cs",
+              "RelativeToolTip": "CdbBack\\CdbApp\\Interfaces\\ICdbHandler.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T21:35:32.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\Global.asax.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\Global.asax.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\Global.asax.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\Global.asax.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T13:10:52.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ErrorFilter.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\Filters\\ErrorFilter.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\Filters\\ErrorFilter.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\Filters\\ErrorFilter.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\Filters\\ErrorFilter.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T15:03:32.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\Controllers\\ValuesController.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\Controllers\\ValuesController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T22:02:43.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CdbController.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\CdbController.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\Controllers\\CdbController.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\CdbController.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\Controllers\\CdbController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T13:10:11.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\App_Start\\RouteConfig.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T13:57:11.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\App_Start\\WebApiConfig.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T13:57:13.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CdbBack\\CdbAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Genesis\\CdbBack\\CdbAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CdbBack\\CdbAPI\\Controllers\\HomeController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T21:18:18.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

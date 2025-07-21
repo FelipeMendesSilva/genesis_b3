@@ -1,0 +1,6 @@
+D:\Genesis\CdbBack\Cdb.Domain\bin\Debug\Cdb.Domain.dll
+D:\Genesis\CdbBack\Cdb.Domain\bin\Debug\Cdb.Domain.pdb
+D:\Genesis\CdbBack\Cdb.Domain\obj\Debug\Cdb.Domain.csproj.AssemblyReference.cache
+D:\Genesis\CdbBack\Cdb.Domain\obj\Debug\Cdb.Domain.csproj.CoreCompileInputs.cache
+D:\Genesis\CdbBack\Cdb.Domain\obj\Debug\Cdb.Domain.dll
+D:\Genesis\CdbBack\Cdb.Domain\obj\Debug\Cdb.Domain.pdb

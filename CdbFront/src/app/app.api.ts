@@ -1,0 +1,1 @@
+export const CDB_API = 'https://localhost:44347';

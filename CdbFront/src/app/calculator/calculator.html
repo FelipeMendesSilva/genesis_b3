@@ -1,0 +1,17 @@
+<h2>Cálculo do CDB</h2>
+
+<label>Digite o Valor:</label>
+<br />
+<input type="number" [(ngModel)]="cdbValue" (ngModelChange)="zerarResultado()" [min]="1" required />
+<br /><br />
+
+<label>Digite o período em meses:</label>
+<br />
+<input type="number" [(ngModel)]="cdbMonths" (ngModelChange)="zerarResultado()" [min]="1" required />
+<br /><br />
+
+<button (click)="calculate()" [disabled]="!valido()">Calcular</button>
+<br /><br />
+
+<p>Rendimento Bruto: R$ {{ posts?.GrossAmount }}<br />
+    Rendimento Líquido: R$ {{ posts?.NetAmount }}</p>
