@@ -1,28 +1,29 @@
 ﻿using Cdb.Domain.DTO;
 using Cdb.Domain.Helpers;
 using Cdb.Domain.Interfaces;
+using System;
 
 namespace Cdb.Domain.Services
 {
     public class CdbCalculatorService : ICdbCalculatorService
     {
-        public CdbYeldDTO Yeld(double value, int months)
+        public CdbYeldDTO Yeld(decimal value, int months)
         {
-            double cdi = 0.009;
-            double tb = 1.08;
+            decimal cdi = 0.009m;
+            decimal tb = 1.08m;
 
-            double totalGross = value;
+            decimal totalGross = value;
             for (int i = 0; i < months; i++)
             {
                 totalGross = totalGross * (1 + (cdi * tb));
             }
 
-            double tax = CdbTaxHelper.CdbTax(months);
-            double yeld = totalGross - value;
-            double taxedYeld = yeld * tax;
-            double totalNet = totalGross - taxedYeld;
+            decimal tax = CdbTaxHelper.CdbTax(months);
+            decimal yeld = totalGross - value;
+            decimal taxedYeld = yeld * tax;
+            decimal totalNet = totalGross - taxedYeld;
 
-            return new CdbYeldDTO() { GrossAmount = totalGross, NetAmount = totalNet};
+            return new CdbYeldDTO() { GrossAmount = Math.Round(totalGross,2), NetAmount = Math.Round(totalNet,2)};
         }
     }
 }

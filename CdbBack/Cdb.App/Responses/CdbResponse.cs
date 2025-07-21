@@ -8,7 +8,7 @@ namespace CdbApp.Responses
 {
     public class CdbResponse
     {
-        public double GrossAmount { get; set; }
-        public double NetAmount { get; set; }
+        public decimal GrossAmount { get; set; }
+        public decimal NetAmount { get; set; }
     }
 }

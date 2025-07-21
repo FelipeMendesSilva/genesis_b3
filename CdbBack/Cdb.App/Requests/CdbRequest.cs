@@ -2,7 +2,7 @@
 {
     public class CdbRequest
     {
-        public double Value { get; set; }
+        public decimal Value { get; set; }
         public int Months { get; set; }
     }
 }
