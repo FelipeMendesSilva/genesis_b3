@@ -1,0 +1,10 @@
+# Ignorar dependências e arquivos gerados
+node_modules/
+.git/
+.gitignore
+.vscode/
+e2e/
+karma.conf.js
+tslint.json
+*.log
+npm-debug.log*
