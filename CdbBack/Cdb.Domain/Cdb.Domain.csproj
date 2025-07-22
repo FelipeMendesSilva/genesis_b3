@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\CdbYeldDTO.cs" />
+    <Compile Include="DTO\CdbYieldDTO.cs" />
     <Compile Include="Helpers\CdbTaxHelper.cs" />
     <Compile Include="Interfaces\ICdbCalculatorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

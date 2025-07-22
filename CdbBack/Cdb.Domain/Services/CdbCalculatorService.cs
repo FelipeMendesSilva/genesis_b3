@@ -7,7 +7,7 @@ namespace Cdb.Domain.Services
 {
     public class CdbCalculatorService : ICdbCalculatorService
     {
-        public CdbYeldDTO Yield(decimal value, int months)
+        public CdbYieldDTO Yield(decimal value, int months)
         {
             decimal cdi = 0.009m;
             decimal tb = 1.08m;
@@ -23,7 +23,7 @@ namespace Cdb.Domain.Services
             decimal taxedYeld = yeld * tax;
             decimal totalNet = totalGross - taxedYeld;
 
-            return new CdbYeldDTO() { GrossAmount = Math.Round(totalGross,2), NetAmount = Math.Round(totalNet,2)};
+            return new CdbYieldDTO() { GrossAmount = Math.Round(totalGross,2), NetAmount = Math.Round(totalNet,2)};
         }
     }
 }

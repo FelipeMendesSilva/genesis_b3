@@ -1,6 +1,6 @@
 ﻿namespace Cdb.Domain.DTO
 {
-    public class CdbYeldDTO
+    public class CdbYieldDTO
     {
         public decimal GrossAmount { get; set; }
         public decimal NetAmount { get; set; }

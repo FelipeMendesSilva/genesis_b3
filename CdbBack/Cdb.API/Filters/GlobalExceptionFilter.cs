@@ -5,9 +5,9 @@ using System.Web.Http.Filters;
 
 namespace Cdb.API.Filters
 {
-    public class GlobalErrorFilter : ExceptionFilterAttribute
+    public class GlobalExceptionFilter : ExceptionFilterAttribute
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(GlobalErrorFilter));
+        private static readonly ILog log = LogManager.GetLogger(typeof(GlobalExceptionFilter));
         public override void OnException(HttpActionExecutedContext context)
         {
             context.Response = context.Request.CreateErrorResponse(

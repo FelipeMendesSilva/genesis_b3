@@ -14,7 +14,7 @@ namespace Cdb.API
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-            config.Filters.Add(new GlobalErrorFilter());
+            config.Filters.Add(new GlobalExceptionFilter());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
