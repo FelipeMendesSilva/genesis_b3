@@ -19,7 +19,7 @@ export class PostService {
   }
 }
 export interface CdbResponse {
-  GrossAmount: number;
-  NetAmount: number;
+  grossAmount: number;
+  netAmount: number;
 }
 
