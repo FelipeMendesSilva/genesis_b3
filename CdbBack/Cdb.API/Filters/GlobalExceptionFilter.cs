@@ -19,9 +19,9 @@ namespace Cdb.API.Filters
         {
             _logger.LogError(exception, "Erro durante o cálculo de CDB");
 
-            var result = Result.Failure("Ocorreu um erro inesperado no servidor.", StatusCodes.Status500InternalServerError);  
-            await httpContext.Response.WriteAsJsonAsync(result, cancellationToken); 
             httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
+            var result = Result.Failure("Ocorreu um erro inesperado no servidor.", StatusCodes.Status500InternalServerError);            
+            await httpContext.Response.WriteAsJsonAsync(result, cancellationToken);
 
             return true;
         }
