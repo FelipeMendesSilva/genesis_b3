@@ -2,6 +2,7 @@
 h2 {
     color: #07357c;
     margin-bottom: 1.5rem;
+    font-weight: 300;
 }
 
 label {
@@ -13,7 +14,7 @@ label {
 
 input[type="number"] {
     width: 300px;
-    padding:  0.8rem;
+    padding:  0.6rem;
     border: 2px solid #d0d8e0;
     font-size: 1rem;
     background-color: #fff;
@@ -32,9 +33,10 @@ input[type="number"]:focus {
 }
 
 button {
-    width: 328px;
+    width: 320px;
     padding: 1rem;
     font-size: 1rem;
+    margin-top: 20px;
     font-weight: bold;
     background-color: #0099ff;
     color: white;
@@ -55,6 +57,5 @@ button:disabled {
 p {
     margin-top: 1.5rem;    
     padding: 0;
-    color: #005aa5;
-    font-weight: bold;
+    color: #07357c;
 }

@@ -1,1 +1,1 @@
-export const CDB_API = 'http://localhost:5013';
+export const CDB_API = 'http://localhost:5050';
