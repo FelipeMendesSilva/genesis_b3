@@ -1,17 +1,9 @@
 ﻿using Cdb.API.Controllers;
-using Cdb.API.Filters;
 using Cdb.App.Requests;
 using Cdb.Domain.Result;
 using Cdb.Tests;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
-using System;
-using System.Net;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Results;
-using Xunit;
 
 namespace Cdb.Controllers.Tests
 {
@@ -27,11 +19,12 @@ namespace Cdb.Controllers.Tests
             var request = new CdbRequest() { Months = 1, Value = 100 };
 
             // Act
-            var result = cdbController.CdbYield(request);
+            var resp = cdbController.CdbYield(request);
 
             // Assert
-            var okResult = Assert.IsType<OkNegotiatedContentResult<object>>(result);
-            Assert.Equal("payload", okResult.Content);
+            var okResult = Assert.IsType<OkObjectResult>(resp); 
+            var result = Assert.IsType<Result>(okResult.Value);
+            Assert.Equal("payload", result.Data);
         }
 
         [Fact]
@@ -44,11 +37,12 @@ namespace Cdb.Controllers.Tests
             var request = new CdbRequest() { Months = -1, Value = 100 };
 
             // Act
-            var result = cdbController.CdbYield(request);
+            var resp = cdbController.CdbYield(request);
 
             // Assert
-            var badRequest = Assert.IsType<BadRequestErrorMessageResult>(result);
-            Assert.Equal("invalid request error", badRequest.Message);
+            var badRequest = Assert.IsType<BadRequestObjectResult>(resp);
+            var result = Assert.IsType<Result>(badRequest.Value);
+            Assert.Equal("invalid request error", result.ErrorMessage);
         }
     }
 }

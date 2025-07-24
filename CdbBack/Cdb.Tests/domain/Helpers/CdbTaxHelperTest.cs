@@ -1,7 +1,4 @@
-﻿using Cdb.App.Requests;
-using Cdb.Domain.Helpers;
-using CdbApp.Validators;
-using Xunit;
+﻿using Cdb.Domain.Helpers;
 
 namespace Cdb.Tests.Domain.Helpers
 {

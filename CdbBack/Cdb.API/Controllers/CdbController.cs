@@ -1,16 +1,13 @@
-﻿using Autofac.Integration.WebApi;
 using Cdb.App.Interfaces;
 using Cdb.App.Requests;
-using System;
-using System.Web.Http;
-using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Cdb.API.Controllers
 {
-    [AutofacControllerConfiguration]
-    public class CdbController : ApiController
+    public class CdbController : Controller
     {
         private readonly ICdbHandler _cdbService;
+
         public CdbController(ICdbHandler cdbService)
         {
             _cdbService = cdbService;
@@ -26,13 +23,13 @@ namespace Cdb.API.Controllers
         /// <response code="500">Internal error during calculation or processing.</response>
         [HttpPost]
         [Route("api/cdb/yield")]
-        public IHttpActionResult CdbYield([FromBody] CdbRequest request)
+        public IActionResult CdbYield([FromBody] CdbRequest request)
         {
             var result = _cdbService.YieldHandler(request);
             if (result.StatusCode != 200)
-                return BadRequest(result.ErrorMessage);
+                return BadRequest(result);
 
-            return Ok(result.Value);
+            return Ok(result);
         }
     }
 }

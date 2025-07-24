@@ -1,6 +1,5 @@
 ﻿using Cdb.App.Requests;
 using CdbApp.Validators;
-using Xunit;
 
 namespace Cdb.Tests.Application.Validators
 {

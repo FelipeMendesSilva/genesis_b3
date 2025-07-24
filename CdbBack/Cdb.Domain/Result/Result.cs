@@ -1,15 +1,15 @@
 ﻿namespace Cdb.Domain.Result
 {
-    public class Result
+    public class  Result
     {
         public int StatusCode { get; }
-        public object Value { get; }
-        public string ErrorMessage { get; }
+        public object? Data { get; }
+        public string? ErrorMessage { get; }
 
-        private Result(int statusCode, object value)
+        private Result(int statusCode, object? data)
         {
             StatusCode = statusCode;
-            Value = value;
+            Data = data;
         }
 
         private Result(int statusCode, string errorMessage)
@@ -18,8 +18,8 @@
             ErrorMessage = errorMessage;
         }
         
-        public static Result Success(object value, int statusCode = 200)
-            => new Result(statusCode, value);
+        public static Result Success(object data, int statusCode = 200)
+            => new Result(statusCode, data);
 
         public static Result Failure(string errorMessage, int statusCode = 400)
             => new Result(statusCode, errorMessage);

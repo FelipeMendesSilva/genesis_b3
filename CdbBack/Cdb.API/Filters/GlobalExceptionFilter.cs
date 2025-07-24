@@ -1,19 +1,29 @@
-﻿using log4net;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http.Filters;
+﻿using Cdb.Domain.Result;
+using Microsoft.AspNetCore.Diagnostics;
 
 namespace Cdb.API.Filters
-{
-    public class GlobalExceptionFilter : ExceptionFilterAttribute
+{    
+    public sealed class GlobalExceptionHandler : IExceptionHandler
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(GlobalExceptionFilter));
-        public override void OnException(HttpActionExecutedContext context)
+        private readonly ILogger<GlobalExceptionHandler> _logger;
+
+        public GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger)
         {
-            context.Response = context.Request.CreateErrorResponse(
-            HttpStatusCode.InternalServerError,
-            "Ocorreu um erro inesperado no servidor.");
-            log.Error("Error during CDB calculation", context.Exception);
+            _logger = logger;
+        }
+
+        public async ValueTask<bool> TryHandleAsync(
+            HttpContext httpContext,
+            Exception exception,
+            CancellationToken cancellationToken)
+        {
+            _logger.LogError(exception, "Erro durante o cálculo de CDB");
+
+            var result = Result.Failure("Ocorreu um erro inesperado no servidor.", StatusCodes.Status500InternalServerError);  
+            await httpContext.Response.WriteAsJsonAsync(result, cancellationToken); 
+            httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
+
+            return true;
         }
     }
 }

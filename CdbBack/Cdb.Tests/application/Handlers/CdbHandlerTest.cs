@@ -3,7 +3,6 @@ using Cdb.App.Requests;
 using Cdb.Domain.DTO;
 using CdbApp.Responses;
 using Moq;
-using Xunit;
 
 namespace Cdb.Tests.Application.Handlers
 {
@@ -23,8 +22,8 @@ namespace Cdb.Tests.Application.Handlers
             var result = cdbHandler.YieldHandler(request);
 
             // Assert
-            Assert.Equal(yieldResult.GrossAmount, (result.Value as CdbResponse).GrossAmount);
-            Assert.Equal(yieldResult.NetAmount, (result.Value as CdbResponse).NetAmount);
+            Assert.Equal(yieldResult.GrossAmount, (result.Data as CdbResponse)?.GrossAmount);
+            Assert.Equal(yieldResult.NetAmount, (result.Data as CdbResponse)?.NetAmount);
             Assert.Equal(200, result.StatusCode);
         }
 

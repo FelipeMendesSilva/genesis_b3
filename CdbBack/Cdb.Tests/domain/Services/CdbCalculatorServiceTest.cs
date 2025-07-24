@@ -1,6 +1,5 @@
 ﻿using Cdb.App.Requests;
 using Cdb.Domain.Services;
-using Xunit;
 
 namespace Cdb.Tests.Domain.Services
 {

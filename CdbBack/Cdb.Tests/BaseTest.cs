@@ -15,8 +15,7 @@ namespace Cdb.Tests
             _cdbHandlerMock = new Mock<ICdbHandler>();
 
             //Domain
-            _cdbCalculatorService = new Mock<ICdbCalculatorService>();
-            
+            _cdbCalculatorService = new Mock<ICdbCalculatorService>();            
         }
     }
 }
