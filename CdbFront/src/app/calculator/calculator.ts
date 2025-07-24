@@ -1,5 +1,5 @@
 import { Component, Injectable } from '@angular/core';
-import { CdbResponse, PostService } from '../services/post.service';
+import { CdbData, CdbResponse, PostService } from '../services/post.service';
 
 @Component({
   selector: 'app-calculator',
@@ -13,7 +13,7 @@ export class Calculator {
   cdbMonths: number = 1;
   errorCdbValueCss: boolean = false;
   errorCdbMonthsCss: boolean = false;
-  posts: CdbResponse | null = null;
+  posts: CdbData | null = null;
 
   constructor(private postService: PostService) { }
 
@@ -21,8 +21,8 @@ export class Calculator {
     this.postService.cdbPost(this.cdbValue, this.cdbMonths)
       .subscribe(
         {
-          next: (res: CdbResponse) => {
-            this.posts = res;
+          next: (res: CdbResponse<CdbData>) => {
+            this.posts = res.data;
           },
           error: (err) => {
             console.error('Erro na requisição:', err);
@@ -35,7 +35,6 @@ export class Calculator {
   cleanResult() {
     this.posts = null;
   }
-
 
   onlyPositive(event: KeyboardEvent, isInt: boolean): void {
     if (event.key === '-'

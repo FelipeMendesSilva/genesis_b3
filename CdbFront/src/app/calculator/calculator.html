@@ -1,28 +1,18 @@
-<div class = "container">
-<h2>Calculadora CDB</h2>
+<div class="container">
+    <h2>Calculadora CDB</h2>
+    <label for="input_cdbValue">Digite o valor do investimento:</label>
+    <input type="number" id="input_cdbValue" [class.erro-input]="errorCdbValueCss" [(ngModel)]="cdbValue"
+        (ngModelChange)="valid()" step="0.01" min="0.01" required (keydown)="onlyPositive($event, false)" />
+    <br /><br />
 
-<label>Digite o valor do investimento:</label>
-<input type="number" 
-    [class.erro-input]="errorCdbValueCss"
-    [(ngModel)]="cdbValue" 
-    (ngModelChange)="valid()"
-    step="0.01" min="0.01" required  
-    (keydown)="onlyPositive($event, false)" />
-<br /><br />
+    <label for="input_cdbMonths">Digite o período em meses:</label>
+    <input type="number" id="input_cdbMonths" [class.erro-input]="errorCdbMonthsCss" [(ngModel)]="cdbMonths"
+        (ngModelChange)="valid()" step="1" min="1" required (keydown)="onlyPositive($event, true)" />
+    <br /><br />
 
-<label>Digite o período em meses:</label>
-<input type="number" 
-    [class.erro-input]="errorCdbMonthsCss"
-    [(ngModel)]="cdbMonths" 
-    (ngModelChange)="valid()"
-    step="1" min="1" required 
-    (keydown)="onlyPositive($event, true)"  />
-<br /><br />
+    <button (click)="calculate()" [disabled]="!valid()">Calcular</button>
+    <br /><br />
 
-<button (click)="calculate()" [disabled]="!valid()">Calcular</button>
-<br /><br />
-
-<p *ngIf="posts">Rendimento Bruto: R$ {{ posts.grossAmount }}<br />
-    Rendimento Líquido: R$ {{ posts.netAmount }}</p>
-  
+    <p *ngIf="posts">Rendimento Bruto: R$ {{ posts.grossAmount }}<br />
+        Rendimento Líquido: R$ {{ posts.netAmount }}</p>
 </div>

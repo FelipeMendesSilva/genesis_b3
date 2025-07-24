@@ -1,7 +1,7 @@
 
 ### CDB Yield Calculator
 
-Aplicação full stack que calcula o rendimento bruto e líquido de um CDB (Certificado de Depósito Bancário), com interface em Angular e lógica de cálculo via API .NET Framework 4.8.
+Aplicação full stack que calcula o rendimento bruto e líquido de um CDB (Certificado de Depósito Bancário) através do valor do patrimônio inicial investido em relação ao período em meses. 
 
 ## Tecnologias
 Frontend: Angular 20
@@ -17,7 +17,7 @@ Servidor de desenvolvimento:
 -API → Porta 44347
 
 ## Estrutura do Projeto
-/
+```
 ├── CdbFront/            # Angular 20 app
 │   └── Dockerfile
 ├── CdbBack/ 
@@ -25,7 +25,7 @@ Servidor de desenvolvimento:
 ├── iniciar-app.bat      # Script para subir ambos os serviços
 ├── CdbSolution.sln      # Solução com ambos os serviços
 └── README.md            # Esse arquivo
-
+```
 ##  Executando o projeto
 
 # Script de inicialização
