@@ -23,7 +23,7 @@ namespace Cdb.App.Handler
                 var errors = "";
                 foreach (var erro in resultado.Errors)
                 {
-                    errors += erro.ErrorMessage + "/ ";
+                    errors += erro.ErrorMessage + " ";
                 }
                 return Result.Failure(errors);
             }
