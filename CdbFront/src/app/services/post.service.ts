@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CDB_API } from '../app.api';
 import { HttpClient } from '@angular/common/http';
-//import { HttpErrorHandler } from '../errorhandler';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError, catchError } from 'rxjs';
 

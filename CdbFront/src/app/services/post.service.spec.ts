@@ -21,7 +21,7 @@ fdescribe('PostService', () => {
   });
 
   afterEach(() => {
-    httpMock.verify(); // Verifica se não há requisições pendentes
+    httpMock.verify(); 
   });
 
   it('deve realizar POST e retornar dados esperados', () => {
@@ -45,7 +45,7 @@ fdescribe('PostService', () => {
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual({ value: 1000, months: 6 });
 
-    req.flush(mockResponse); // Responde com o mock
+    req.flush(mockResponse); 
   });
 
   it('deve tratar erro de resposta HTTP', () => {

@@ -6,7 +6,6 @@ export class HttpErrorHandler {
     let errorMessage: string;
 
     if (error instanceof HttpErrorResponse) {
-      // Você pode personalizar isso conforme os campos da API
       errorMessage = `Erro ${error.status}: ${error.message}`;
     } else {
       errorMessage = error?.message || 'Erro desconhecido';

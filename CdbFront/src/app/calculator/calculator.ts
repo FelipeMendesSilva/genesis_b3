@@ -26,7 +26,7 @@ export class Calculator {
           },
           error: (err) => {
             console.error('Erro na requisição:', err);
-            this.posts = null; // limpa resultado anterior, se quiser
+            this.posts = null; 
             alert('Ocorreu um erro ao calcular o CDB. Tente novamente mais tarde.');
           }
         });
