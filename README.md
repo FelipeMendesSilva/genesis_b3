@@ -32,7 +32,7 @@ Containerização: Docker
 
 Você pode iniciar ambos os serviços manualmente, usando docker-compose, ou simplesmente executando o arquivo **iniciar-app.bat**.
 
-### .Usando Docker Compose
+### .Docker Compose
 
 Na raiz do projeto, execute:
 
@@ -42,7 +42,7 @@ bash
 docker-compose up --build
 ```
 
-### .Executando manualmente
+### .Manualmente
 
 1️⃣ Front-end (Angular)
 A partir da pasta CdbFront:
@@ -74,8 +74,8 @@ Content-Type: application/json
 
 |Propriedade|Tipo|Valores Aceitos|Obrigatório|
 |---|---|---|---|
-|value|Decimal|Valor numérico positivo (ex: 1000.00)|Sim|
-|months|Inteiro|Inteiro positivo ≥ 1 (ex: 12)|Sim|
+|value|Decimal|Valor numérico positivo (ex: 1000.99)|Sim|
+|months|Int|Inteiro positivo ≥ 1 (ex: 12)|Sim|
 
 Exemplo de Request:
 ```
@@ -90,9 +90,9 @@ json
 |Propriedade|Tipo|Valores Aceitos|Obrigatório|
 |---|---|---|---|
 |statusCode|Inteiro|Valor numérico positivo (ex: 200)|Sim|
-|data: grossAmount|Decimal|Inteiro positivo (ex: 1000.00)|Não|
-|data: grossAmount|Decimal|Inteiro positivo (ex: 1000.00)|Não|
-|errorMessage|Texto|Inteiro positivo (ex: 1000.00)|Não|
+|data: grossAmount|Decimal|Inteiro positivo (ex: 1000.99)|Não|
+|data: grossAmount|Decimal|Inteiro positivo (ex: 1000.99)|Não|
+|errorMessage|String|Texto (ex: "erro 500")|Não|
 
 Exemplo de Response em caso de sucesso:
 ```
