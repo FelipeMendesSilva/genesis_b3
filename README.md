@@ -89,7 +89,8 @@ json
 ### .Response
 |Propriedade|Tipo|Valores Aceitos|Obrigatório|
 |---|---|---|---|
-|statusCode|Inteiro|Valor numérico positivo (ex: 200)|Sim|
+|statusCode|Int|Valor numérico positivo (ex: 200)|Sim|
+|data|Object|Objeto contendo o resultado|Não|
 |data: grossAmount|Decimal|Inteiro positivo (ex: 1000.99)|Não|
 |data: grossAmount|Decimal|Inteiro positivo (ex: 1000.99)|Não|
 |errorMessage|String|Texto (ex: "erro 500")|Não|
