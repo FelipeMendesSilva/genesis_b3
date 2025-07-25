@@ -74,7 +74,7 @@ Content-Type: application/json
 
 |Propriedade|Tipo|Valores Aceitos|Obrigatório|
 |---|---|---|---|
-|value|Decimal|Valor numérico positivo (ex: 1000.99)|Sim|
+|initialAmount|Decimal|Valor numérico positivo (ex: 1000.99)|Sim|
 |months|Int|Inteiro positivo ≥ 1 (ex: 12)|Sim|
 
 Exemplo de Request:
