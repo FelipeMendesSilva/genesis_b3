@@ -1,90 +1,156 @@
+# CDB Yield Calculator
 
-### CDB Yield Calculator
-
-Aplicação full stack que calcula o rendimento bruto e líquido de um CDB (Certificado de Depósito Bancário) através do valor do patrimônio inicial investido em relação ao período em meses. 
-
-## Tecnologias
-Frontend: Angular 20
-
-Backend: ASP.NET (.NET Framework 4.8)
-
-Containerização: Docker
-
-Servidor de desenvolvimento:
-
--Frontend → Porta 4200
-
--API → Porta 44347
-
-## Estrutura do Projeto
-```
-├── CdbFront/            # Angular 20 app
-│   └── Dockerfile
-├── CdbBack/ 
-│   └── Publish          # API publicada para IIS Express
-├── iniciar-app.bat      # Script para subir ambos os serviços
-├── CdbSolution.sln      # Solução com ambos os serviços
-└── README.md            # Esse arquivo
-```
-##  Executando o projeto
-
-# Script de inicialização
-
-Você pode usar o iniciar-app.bat para:
-
-Iniciar o IIS Express apontando para a API publicada
-
-Buildar e rodar o contêiner Angular na porta 4200 automaticamente no navegador
-
-Manter a janela do terminal ativa com logs
-
-Ou manualmente conforme os passos 1 e 2 a seguir
-
-
-1. Frontend (Angular)
-
-A partir da pasta CdbFront
-
-bash
-docker build -t angular-frontend .
-docker run -d -p 4200:80 angular-frontend
-
-Acesse: http://localhost:4200
-
-2. CdbBack (API .NET Framework)
-
-Configure o IIS manualmente para apontar para a pasta Publish.
-
-Acesse via requisição POST:
-
-http://localhost:44347/api/cdb/yield
-
-# API REST – Detalhes da Requisição
-
-Requisição POST
-URL: http://localhost:44347/api/cdb/yield
-Content-Type: application/json
-
-Request Json:
-
-{
-  "value": 1000.00,
-  "months": 12
-}
-
-Response Json: 
-
-{
-  "amountgross": 1137.84,
-  "amountnet": 1101.32
-}
+Aplicação full-stack que calcula o rendimento bruto e líquido de um CDB (Certificado de Depósito Bancário) com base no valor investido e no período em meses.
 
 ## Funcionalidades
 
-Cálculo automático do rendimento bruto e líquido de CDB com base em valor e tempo
+. Cálculo automático do rendimento bruto e líquido de CDB  
+. Interface responsiva com Angular  
+. Comunicação via API REST  
+. Totalmente dockerizado e pronto para execução local  
 
-Interface responsiva em Angular
+## Tecnologias
 
-Comunicação via API REST
+Front-end: Angular 20
+Back-end: ASP.NET Core (.NET 8) — container Docker
+Containerização: Docker
 
-Totalmente dockerizado e fácil de rodar em ambiente local
+### .Estrutura do Projeto  
+
+```
+├── CdbFront/              # Aplicação Angular
+│   └── Dockerfile
+├── CdbBack/               # Aplicaçã API .NET
+│   └── Dockerfile
+├── iniciar-app.bat        # Inicia os serviços
+├── docker-compose.yml     # Orquestração dos serviços 
+├── CdbSolution.sln        # Solução 
+└── README.md              # Este arquivo
+```
+
+## Execução
+
+Você pode iniciar ambos os serviços manualmente, usando docker-compose, ou executando o arquivo **iniciar-app.bat**.
+
+### .Usando Docker Compose (recomendado)
+
+Na raiz do projeto, execute:
+
+```
+bash
+
+docker-compose up --build
+```
+
+### .Executando manualmente
+
+1️⃣ Front-end (Angular)
+A partir da pasta CdbFront:
+
+```
+bash
+
+docker build -t cdb-frontend .
+docker run -d -p 4200:80 cdb-frontend
+```
+
+2️⃣ Back-end (API .NET Core)
+A partir da pasta CdbBack:
+
+```
+bash
+
+docker build -t cdb-api .
+docker run -d -p 5050:8080 cdb-backend
+```
+
+## API REST – Detalhes da Requisição
+
+Método: POST  
+URL: http://localhost:5050/api/cdb/yield  
+Content-Type: application/json  
+
+### .Request   
+
+|Propriedade|Tipo|Valores Aceitos|Obrigatório|
+|---|---|---|---|
+|value|Decimal|Valor numérico positivo (ex: 1000.00)|Sim|
+|months|Inteiro|Inteiro positivo ≥ 1 (ex: 12)|Sim|
+
+Exemplo de Request:
+```
+json
+{
+  "value": 212, 
+  "months": 5 
+}
+```
+
+### .Response
+|Propriedade|Tipo|Valores Aceitos|Obrigatório|
+|---|---|---|---|
+|statusCode|Inteiro|Valor numérico positivo (ex: 200)|Sim|
+|data: grossAmount|Decimal|Inteiro positivo (ex: 1000.00)|Não|
+|data: grossAmount|Decimal|Inteiro positivo (ex: 1000.00)|Não|
+|errorMessage|Texto|Inteiro positivo (ex: 1000.00)|Não|
+
+Exemplo de Response em caso de sucesso:
+```
+json
+{
+    "statusCode": 200, 
+    "data": {
+        "grossAmount": 222.51, 
+        "netAmount": 220.14 
+    },
+    "errorMessage": null
+}
+```
+Exemplo de Response em caso de bad request:
+```
+json
+{
+    "statusCode": 400,
+    "data": null,
+    "errorMessage": "The 'months' property must be at least 1. "
+}
+```
+Exemplo de Response em caso de falha:
+```
+json
+{
+    "statusCode": 500, 
+    "data": null,
+    "errorMessage": Ocorreu um erro inesperado no servidor."
+}
+```
+
+### .Postman
+
+Para realizar testes utilize o cURL abaixo
+```
+curl --location 'http://localhost:5050/api/cdb/yield' \
+--header 'Content-Type: application/json' \
+--data '{
+    "value":100,
+    "months":1
+}'
+```
+## Front-end Angular
+
+- Acesse: http://localhost:4200  
+- Introduza os valor do patrimônio a ser investido, deve ter valor positivo e no máximo duas casas decimais (ex:100,99)  
+- Introduza o período em meses, deve ser maior que 1(ex:3)  
+- Clique no botão "Calcular"
+- O resultado dos rendimentos bruto e líquido aparececerá na parte inferior da calculadora
+
+# .Testes Unitários
+
+Para executar os testes unitários, a partir da pasta CdbFront execute  
+
+```
+bash
+
+ng test
+```
+
