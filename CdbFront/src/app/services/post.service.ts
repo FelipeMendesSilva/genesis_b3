@@ -10,9 +10,9 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  cdbPost(cdbValue: number, cdbMonths: number): Observable<CdbResponse<CdbData>> {
+  cdbPost(cdbInitialAmount: number, cdbMonths: number): Observable<CdbResponse<CdbData>> {
     const payload = {
-      value: cdbValue,
+      initialAmount: cdbInitialAmount,
       months: cdbMonths
     };
 

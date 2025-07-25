@@ -28,7 +28,7 @@ namespace Cdb.App.Handler
                 return Result.Failure(errors);
             }
 
-            var cdbYeldDTO = _cdbCalculatorService.Yield(cdbRequest.Value, cdbRequest.Months);
+            var cdbYeldDTO = _cdbCalculatorService.Yield(cdbRequest.InitialAmount, cdbRequest.Months);
             var cdbResponse = new CdbResponse() { GrossAmount = cdbYeldDTO.GrossAmount, NetAmount = cdbYeldDTO.NetAmount };
             return Result.Success(cdbResponse);
         }
