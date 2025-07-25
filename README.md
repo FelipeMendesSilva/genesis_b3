@@ -81,7 +81,7 @@ Exemplo de Request:
 ```
 json
 {
-  "value": 212, 
+  "initialAmount": 212, 
   "months": 5 
 }
 ```
@@ -132,14 +132,14 @@ Para realizar testes utilize o cURL abaixo
 curl --location 'http://localhost:5050/api/cdb/yield' \
 --header 'Content-Type: application/json' \
 --data '{
-    "value":100,
+    "initialAmount":100,
     "months":1
 }'
 ```
 ## Front-end Angular
 
 - Acesse: http://localhost:4200  
-- Introduza os valor do patrimônio a ser investido, deve ter valor positivo e no máximo duas casas decimais (ex:100,99)  
+- Introduza o valor do patrimônio a ser investido, deve ter valor positivo e no máximo duas casas decimais (ex:100,99)  
 - Introduza o período em meses, deve ser maior que 1(ex:3)  
 - Clique no botão "Calcular"
 - O resultado dos rendimentos bruto e líquido aparececerá na parte inferior da calculadora

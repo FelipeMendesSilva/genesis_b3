@@ -9,16 +9,16 @@ import { CdbData, CdbResponse, PostService } from '../services/post.service';
 })
 @Injectable()
 export class Calculator {
-  cdbValue: number = 100.00;
+  cdbInitialAmount: number = 100.00;
   cdbMonths: number = 1;
-  errorCdbValueCss: boolean = false;
+  errorCdbInitialAmountCss: boolean = false;
   errorCdbMonthsCss: boolean = false;
   posts: CdbData | null = null;
 
   constructor(private postService: PostService) { }
 
   calculate() {
-    this.postService.cdbPost(this.cdbValue, this.cdbMonths)
+    this.postService.cdbPost(this.cdbInitialAmount, this.cdbMonths)
       .subscribe(
         {
           next: (res: CdbResponse<CdbData>) => {
@@ -48,10 +48,10 @@ export class Calculator {
 
   valid(): boolean {
     var isValid = true;
-    if(this.cdbValue >= 0.01 && this.cdbValue.toString().match(/^\d*((\.|\,)\d{0,2})?$/))
-      this.errorCdbValueCss = false;
+    if(this.cdbInitialAmount >= 0.01 && this.cdbInitialAmount.toString().match(/^\d*((\.|\,)\d{0,2})?$/))
+      this.errorCdbInitialAmountCss = false;
     else{
-      this.errorCdbValueCss = true;
+      this.errorCdbInitialAmountCss = true;
       isValid = false;}
 
     if(this.cdbMonths >= 1 && Number.isInteger(this.cdbMonths))

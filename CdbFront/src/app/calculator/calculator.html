@@ -1,7 +1,7 @@
 <div class="container">
     <h2>Calculadora CDB</h2>
-    <label for="input_cdbValue">Digite o valor do investimento:</label>
-    <input type="number" id="input_cdbValue" [class.erro-input]="errorCdbValueCss" [(ngModel)]="cdbValue"
+    <label for="input_cdbInitialAmount">Digite o valor do investimento:</label>
+    <input type="number" id="input_cdbInitialAmount" [class.erro-input]="errorCdbInitialAmountCss" [(ngModel)]="cdbInitialAmount"
         (ngModelChange)="valid()" step="0.01" min="0.01" required (keydown)="onlyPositive($event, false)" />
     <br /><br />
 

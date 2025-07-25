@@ -16,7 +16,7 @@ namespace Cdb.Controllers.Tests
             _cdbHandlerMock.Setup(h => h.YieldHandler(It.IsAny<CdbRequest>()))
                 .Returns(Result.Success("payload", 200));
             var cdbController = new CdbController(_cdbHandlerMock.Object);
-            var request = new CdbRequest() { Months = 1, Value = 100 };
+            var request = new CdbRequest() { Months = 1, InitialAmount = 100 };
 
             // Act
             var resp = cdbController.CdbYield(request);
@@ -34,7 +34,7 @@ namespace Cdb.Controllers.Tests
             _cdbHandlerMock.Setup(h => h.YieldHandler(It.IsAny<CdbRequest>()))
                 .Returns(Result.Failure("invalid request error", 400));
             var cdbController = new CdbController(_cdbHandlerMock.Object);
-            var request = new CdbRequest() { Months = -1, Value = 100 };
+            var request = new CdbRequest() { Months = -1, InitialAmount = 100 };
 
             // Act
             var resp = cdbController.CdbYield(request);

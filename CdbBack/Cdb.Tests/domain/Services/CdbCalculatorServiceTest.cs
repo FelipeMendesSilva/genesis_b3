@@ -9,7 +9,7 @@ namespace Cdb.Tests.Domain.Services
         public void Yield_ValidRequest_ReturnsMax2DecimalsAmount()
         {
             // Arrange            
-            var request = new CdbRequest() { Months = 1, Value = 90.999m };
+            var request = new CdbRequest() { Months = 1, InitialAmount = 90.999m };
             var cdbService = new CdbCalculatorService();
 
             // Act

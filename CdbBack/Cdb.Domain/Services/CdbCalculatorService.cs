@@ -6,19 +6,19 @@ namespace Cdb.Domain.Services
 {
     public class CdbCalculatorService : ICdbCalculatorService
     {
-        public CdbYieldDTO Yield(decimal value, int months)
+        public CdbYieldDTO Yield(decimal initialAmount, int months)
         {
             decimal cdi = 0.009m;
             decimal tb = 1.08m;
 
-            decimal totalGross = value;
+            decimal totalGross = initialAmount;
             for (int i = 0; i < months; i++)
             {
                 totalGross = totalGross * (1 + (cdi * tb));
             }
 
             decimal tax = CdbTaxHelper.CdbTax(months);
-            decimal yeld = totalGross - value;
+            decimal yeld = totalGross - initialAmount;
             decimal taxedYeld = yeld * tax;
             decimal totalNet = totalGross - taxedYeld;
 

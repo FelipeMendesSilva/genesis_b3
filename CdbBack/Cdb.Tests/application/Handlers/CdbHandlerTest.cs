@@ -16,7 +16,7 @@ namespace Cdb.Tests.Application.Handlers
             _cdbCalculatorService.Setup(h => h.Yield(It.IsAny<decimal>(), It.IsAny<int>()))
                 .Returns(yieldResult);
             var cdbHandler = new CdbHandler(_cdbCalculatorService.Object);
-            var request = new CdbRequest() { Months = 1, Value = 90 };
+            var request = new CdbRequest() { Months = 1, InitialAmount = 90 };
 
             // Act
             var result = cdbHandler.YieldHandler(request);
@@ -35,7 +35,7 @@ namespace Cdb.Tests.Application.Handlers
             _cdbCalculatorService.Setup(h => h.Yield(It.IsAny<decimal>(), It.IsAny<int>()))
                 .Returns(yieldResult);
             var cdbHandler = new CdbHandler(_cdbCalculatorService.Object);
-            var request = new CdbRequest() { Months = -1, Value = 90 };
+            var request = new CdbRequest() { Months = -1, InitialAmount = 90 };
 
             // Act
             var result = cdbHandler.YieldHandler(request);
