@@ -30,9 +30,9 @@ Containerização: Docker
 
 ## Execução
 
-Você pode iniciar ambos os serviços manualmente, usando docker-compose, ou executando o arquivo **iniciar-app.bat**.
+Você pode iniciar ambos os serviços manualmente, usando docker-compose, ou simplesmente executando o arquivo **iniciar-app.bat**.
 
-### .Usando Docker Compose (recomendado)
+### .Usando Docker Compose
 
 Na raiz do projeto, execute:
 
@@ -144,7 +144,7 @@ curl --location 'http://localhost:5050/api/cdb/yield' \
 - Clique no botão "Calcular"
 - O resultado dos rendimentos bruto e líquido aparececerá na parte inferior da calculadora
 
-# .Testes Unitários
+### .Testes Unitários
 
 Para executar os testes unitários, a partir da pasta CdbFront execute  
 
