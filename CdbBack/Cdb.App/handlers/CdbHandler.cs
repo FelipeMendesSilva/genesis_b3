@@ -2,19 +2,21 @@
 using Cdb.App.Requests;
 using Cdb.Domain.Interfaces;
 using Cdb.Domain.Result;
-using CdbApp.Responses;
-using CdbApp.Validators;
+using Cdb.App.Responses;
+using Cdb.App.Validators;
 using System.Text;
 
-namespace Cdb.App.Handler
+namespace Cdb.App.Handlers
 {
     public class CdbHandler: ICdbHandler
     {
         private readonly ICdbCalculatorService _cdbCalculatorService;
+
         public CdbHandler(ICdbCalculatorService cdbCalculatorService)
         {
             _cdbCalculatorService = cdbCalculatorService;
         }
+
         public Result YieldHandler(CdbRequest cdbRequest)
         {
             var validator = new CdbRequestValidator();
