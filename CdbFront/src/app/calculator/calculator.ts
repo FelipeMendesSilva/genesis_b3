@@ -15,7 +15,7 @@ export class Calculator {
   errorCdbMonthsCss: boolean = false;
   posts: CdbData | null = null;
 
-  constructor(private postService: PostService) { }
+  constructor(private readonly postService: PostService) { }
 
   calculate() {
     this.postService.cdbPost(this.cdbInitialAmount, this.cdbMonths)
