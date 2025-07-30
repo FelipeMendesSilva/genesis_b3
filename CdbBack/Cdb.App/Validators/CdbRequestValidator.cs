@@ -1,7 +1,7 @@
 ﻿using Cdb.App.Requests;
 using FluentValidation;
 
-namespace CdbApp.Validators
+namespace Cdb.App.Validators
 {
     public class CdbRequestValidator : AbstractValidator<CdbRequest>
     {

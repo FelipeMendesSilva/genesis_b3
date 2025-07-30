@@ -1,11 +1,10 @@
 ﻿using Cdb.API.Controllers;
 using Cdb.App.Requests;
 using Cdb.Domain.Result;
-using Cdb.Tests;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 
-namespace Cdb.Controllers.Tests
+namespace Cdb.Tests.api.Controllers
 {
     public class CdbControllerTest : BaseTest
     {

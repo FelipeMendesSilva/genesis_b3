@@ -14,7 +14,7 @@ namespace Cdb.Domain.Services
             decimal totalGross = initialAmount;
             for (int i = 0; i < months; i++)
             {
-                totalGross = totalGross * (1 + (cdi * tb));
+                totalGross *= (1 + (cdi * tb));
             }
 
             decimal tax = CdbTaxHelper.CdbTax(months);

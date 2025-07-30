@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CdbApp.Responses
+namespace Cdb.App.Responses
 {
     public class CdbResponse
     {

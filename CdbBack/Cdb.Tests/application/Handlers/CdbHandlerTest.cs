@@ -1,7 +1,7 @@
-﻿using Cdb.App.Handler;
+﻿using Cdb.App.Handlers;
 using Cdb.App.Requests;
 using Cdb.Domain.DTO;
-using CdbApp.Responses;
+using Cdb.App.Responses;
 using Moq;
 
 namespace Cdb.Tests.Application.Handlers

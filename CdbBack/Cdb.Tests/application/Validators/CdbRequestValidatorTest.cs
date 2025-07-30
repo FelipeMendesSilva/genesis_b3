@@ -1,5 +1,5 @@
 ﻿using Cdb.App.Requests;
-using CdbApp.Validators;
+using Cdb.App.Validators;
 
 namespace Cdb.Tests.Application.Validators
 {
