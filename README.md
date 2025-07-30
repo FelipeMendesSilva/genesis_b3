@@ -75,7 +75,7 @@ Content-Type: application/json
 |Propriedade|Tipo|Valores Aceitos|Obrigatório|
 |---|---|---|---|
 |initialAmount|Decimal|Valor numérico positivo (ex: 1000.99)|Sim|
-|months|Int|Inteiro positivo ≥ 1 (ex: 12)|Sim|
+|months|Int|Inteiro positivo ≥ 2 (ex: 12)|Sim|
 
 Exemplo de Request:
 ```
@@ -113,7 +113,7 @@ json
 {
     "statusCode": 400,
     "data": null,
-    "errorMessage": "The 'months' property must be at least 1. "
+    "errorMessage": "The 'months' property must be at least 2. "
 }
 ```
 Exemplo de Response em caso de falha:
@@ -134,14 +134,14 @@ curl --location 'http://localhost:5050/api/cdb/yield' \
 --header 'Content-Type: application/json' \
 --data '{
     "initialAmount":100,
-    "months":1
+    "months":2
 }'
 ```
 ## Front-end Angular
 
 - Acesse: http://localhost:4200  
 - Introduza o valor do patrimônio a ser investido, deve ter valor positivo e no máximo duas casas decimais (ex:100,99)  
-- Introduza o período em meses, deve ser maior que 1(ex:3)  
+- Introduza o período em meses, deve ser maior que 2(ex:3)  
 - Clique no botão "Calcular"
 - O resultado dos rendimentos bruto e líquido aparececerá na parte inferior da calculadora
 
