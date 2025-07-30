@@ -43,7 +43,7 @@ fdescribe('PostService', () => {
 
     const req = httpMock.expectOne(`${CDB_API}/api/cdb/yield`);
     expect(req.request.method).toBe('POST');
-    expect(req.request.body).toEqual({ value: 1000, months: 6 });
+    expect(req.request.body).toEqual({ initialAmount: 1000, months: 6 });
 
     req.flush(mockResponse); 
   });

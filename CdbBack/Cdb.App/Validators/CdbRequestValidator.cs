@@ -11,7 +11,7 @@ namespace CdbApp.Validators
                 .GreaterThan(0).WithMessage("The 'initialAmount' property must be grater than 0.");
 
             RuleFor(x => x.Months)
-                .GreaterThan(0).WithMessage("The 'months' property must be at least 1.");
+                .GreaterThan(1).WithMessage("The 'months' property must be at least 2.");
         }
     }
 }

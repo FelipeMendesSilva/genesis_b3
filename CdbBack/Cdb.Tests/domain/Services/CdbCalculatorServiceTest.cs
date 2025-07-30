@@ -9,15 +9,14 @@ namespace Cdb.Tests.Domain.Services
         public void Yield_ValidRequest_ReturnsMax2DecimalsAmount()
         {
             // Arrange            
-            var request = new CdbRequest() { Months = 1, InitialAmount = 90.999m };
             var cdbService = new CdbCalculatorService();
 
             // Act
-            var result = cdbService.Yield(90.999999m, 1);
+            var result = cdbService.Yield(90.999999m, 2);
 
             // Assert            
-            Assert.Equal(91.88m, result.GrossAmount);
-            Assert.Equal(91.69m, result.NetAmount);
+            Assert.Equal(92.78m, result.GrossAmount);
+            Assert.Equal(92.38m, result.NetAmount);
         }
     }
 }

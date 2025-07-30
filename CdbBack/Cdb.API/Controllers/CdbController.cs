@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Cdb.API.Controllers
 {
+    [Route("/api/[controller]/")]
     public class CdbController : Controller
     {
         private readonly ICdbHandler _cdbService;
@@ -22,7 +23,7 @@ namespace Cdb.API.Controllers
         /// <response code="400">Invalid request (missing or incorrect data).</response>
         /// <response code="500">Internal error during calculation or processing.</response>
         [HttpPost]
-        [Route("api/cdb/yield")]
+        [Route("yield")]
         public IActionResult CdbYield([FromBody] CdbRequest request)
         {
             var result = _cdbService.YieldHandler(request);

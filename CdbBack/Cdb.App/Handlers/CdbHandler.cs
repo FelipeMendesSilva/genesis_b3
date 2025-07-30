@@ -4,6 +4,7 @@ using Cdb.Domain.Interfaces;
 using Cdb.Domain.Result;
 using CdbApp.Responses;
 using CdbApp.Validators;
+using System.Text;
 
 namespace Cdb.App.Handler
 {
@@ -20,12 +21,13 @@ namespace Cdb.App.Handler
             var resultado = validator.Validate(cdbRequest);
             if (!resultado.IsValid)
             {
-                var errors = "";
+                StringBuilder errors = new StringBuilder();
                 foreach (var erro in resultado.Errors)
                 {
-                    errors += erro.ErrorMessage + " ";
+                    errors.Append(erro.ErrorMessage + " ");
                 }
-                return Result.Failure(errors);
+                
+                return Result.Failure(errors.ToString());
             }
 
             var cdbYeldDTO = _cdbCalculatorService.Yield(cdbRequest.InitialAmount, cdbRequest.Months);

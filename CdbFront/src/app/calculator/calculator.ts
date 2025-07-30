@@ -10,7 +10,7 @@ import { CdbData, CdbResponse, PostService } from '../services/post.service';
 @Injectable()
 export class Calculator {
   cdbInitialAmount: number = 100.00;
-  cdbMonths: number = 1;
+  cdbMonths: number = 2;
   errorCdbInitialAmountCss: boolean = false;
   errorCdbMonthsCss: boolean = false;
   posts: CdbData | null = null;
@@ -26,7 +26,7 @@ export class Calculator {
           },
           error: (err) => {
             console.error('Erro na requisição:', err);
-            this.posts = null; 
+            this.posts = null;
             alert('Ocorreu um erro ao calcular o CDB. Tente novamente mais tarde.');
           }
         });
@@ -47,19 +47,24 @@ export class Calculator {
   }
 
   valid(): boolean {
-    var isValid = true;
-    if(this.cdbInitialAmount >= 0.01 && this.cdbInitialAmount.toString().match(/^\d*((\.|\,)\d{0,2})?$/))
-      this.errorCdbInitialAmountCss = false;
-    else{
-      this.errorCdbInitialAmountCss = true;
-      isValid = false;}
+    let isValid = true;
+    const regex = /^\d*([.,]\d{0,2})?$/;
+    const match = regex.exec(this.cdbInitialAmount.toString());
 
-    if(this.cdbMonths >= 1 && Number.isInteger(this.cdbMonths))
-      this.errorCdbMonthsCss = false;
-    else{
-      this.errorCdbMonthsCss = true;
-      isValid = false;}
+    if (this.cdbInitialAmount >= 0.01 && match) 
+        this.errorCdbInitialAmountCss = false;
+      else {
+        this.errorCdbInitialAmountCss = true;
+        isValid = false;
+      }
 
-    return isValid;
+      if (this.cdbMonths >= 2 && Number.isInteger(this.cdbMonths))
+        this.errorCdbMonthsCss = false;
+      else {
+        this.errorCdbMonthsCss = true;
+        isValid = false;
+      }
+
+      return isValid;
+    }
   }
-}

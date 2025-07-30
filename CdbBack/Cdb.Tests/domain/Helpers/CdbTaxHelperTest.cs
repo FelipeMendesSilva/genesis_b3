@@ -5,10 +5,10 @@ namespace Cdb.Tests.Domain.Helpers
     public class CdbTaxHelperTest
     {
         [Fact]
-        public void CdbTax_LessThan6Months_Returns22_5()
+        public void CdbTax_LessThan6MonthsAndGreaterThan1_Returns22_5()
         {   
             // Act
-            var result = CdbTaxHelper.CdbTax(1);
+            var result = CdbTaxHelper.CdbTax(2);
 
             // Assert
             Assert.Equal(0.225m,result);

@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { CDB_API } from '../app.api';
-import { HttpClient } from '@angular/common/http';
-import { HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError, catchError } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class PostService {
-  private cdbUrl = `${CDB_API}/api/cdb/yield`;
+  private readonly cdbUrl = `${CDB_API}/api/cdb/yield`;
 
-  constructor(private http: HttpClient) { }
+  constructor(private readonly http: HttpClient) { }
 
   cdbPost(cdbInitialAmount: number, cdbMonths: number): Observable<CdbResponse<CdbData>> {
     const payload = {

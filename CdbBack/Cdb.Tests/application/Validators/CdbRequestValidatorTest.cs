@@ -9,7 +9,7 @@ namespace Cdb.Tests.Application.Validators
         public void Validate_ValidRequest_ReturnsIsValid()
         {
             // Arrange            
-            var request = new CdbRequest() { Months = 1, InitialAmount = 90 };
+            var request = new CdbRequest() { Months = 2, InitialAmount = 90 };
             var validator = new CdbRequestValidator();
 
             // Act
@@ -22,9 +22,9 @@ namespace Cdb.Tests.Application.Validators
 
         [Theory]
         [InlineData(0, 100)]
-        [InlineData(1, -100)]
+        [InlineData(2, -100)]
         [InlineData(-1, 100)]
-        [InlineData(1, 0)]
+        [InlineData(2, 0)]
         public void Validate_InvalidRequest_ReturnsIsNotValid(int months, decimal value)
         {
             // Arrange
